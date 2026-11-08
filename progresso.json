@@ -1,0 +1,135 @@
+{
+  "xp": 0,
+  "xp_total": 240,
+  "titulo": "Aprendiz de Código",
+  "tudo_limpo": false,
+  "nota_1_ponto": 0.0,
+  "niveis": [
+    {
+      "n": 1,
+      "nome": "Vila do Boletim",
+      "xp": 0,
+      "limpo": false,
+      "missoes": [
+        {
+          "id": "1.1",
+          "ok": false
+        },
+        {
+          "id": "1.2",
+          "ok": false
+        },
+        {
+          "id": "1.3",
+          "ok": false
+        }
+      ],
+      "conquistas": []
+    },
+    {
+      "n": 2,
+      "nome": "Floresta das Tarefas",
+      "xp": 0,
+      "limpo": false,
+      "missoes": [
+        {
+          "id": "2.1",
+          "ok": false
+        },
+        {
+          "id": "2.2",
+          "ok": false
+        },
+        {
+          "id": "2.3",
+          "ok": false
+        }
+      ],
+      "conquistas": []
+    },
+    {
+      "n": 3,
+      "nome": "Cânions dos Logs",
+      "xp": 0,
+      "limpo": false,
+      "missoes": [
+        {
+          "id": "3.1",
+          "ok": false
+        },
+        {
+          "id": "3.2",
+          "ok": false
+        },
+        {
+          "id": "3.3",
+          "ok": false
+        }
+      ],
+      "conquistas": []
+    },
+    {
+      "n": 4,
+      "nome": "Torre do Validador",
+      "xp": 0,
+      "limpo": false,
+      "missoes": [
+        {
+          "id": "4.1",
+          "ok": false
+        },
+        {
+          "id": "4.2",
+          "ok": false
+        },
+        {
+          "id": "4.3",
+          "ok": false
+        }
+      ],
+      "conquistas": []
+    },
+    {
+      "n": 5,
+      "nome": "Vulcão dos Sensores",
+      "xp": 0,
+      "limpo": false,
+      "missoes": [
+        {
+          "id": "5.1",
+          "ok": false
+        },
+        {
+          "id": "5.2",
+          "ok": false
+        },
+        {
+          "id": "5.3",
+          "ok": false
+        }
+      ],
+      "conquistas": []
+    },
+    {
+      "n": 6,
+      "nome": "Castelo da Playlist",
+      "xp": 0,
+      "limpo": false,
+      "missoes": [
+        {
+          "id": "6.1",
+          "ok": false
+        },
+        {
+          "id": "6.2",
+          "ok": false
+        },
+        {
+          "id": "6.3",
+          "ok": false
+        }
+      ],
+      "conquistas": []
+    }
+  ]
+}
