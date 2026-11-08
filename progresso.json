@@ -1,30 +1,33 @@
 {
-  "xp": 0,
+  "xp": 40,
   "xp_total": 240,
-  "titulo": "Aprendiz de Código",
+  "titulo": "Escudeiro Funcional",
   "tudo_limpo": false,
-  "nota_1_ponto": 0.0,
+  "nota_1_ponto": 0.17,
   "niveis": [
     {
       "n": 1,
       "nome": "Vila do Boletim",
-      "xp": 0,
-      "limpo": false,
+      "xp": 40,
+      "limpo": true,
       "missoes": [
         {
           "id": "1.1",
-          "ok": false
+          "ok": true
         },
         {
           "id": "1.2",
-          "ok": false
+          "ok": true
         },
         {
           "id": "1.3",
-          "ok": false
+          "ok": true
         }
       ],
-      "conquistas": []
+      "conquistas": [
+        "🔁 Zero laços",
+        "🧊 Mãos limpas"
+      ]
     },
     {
       "n": 2,
