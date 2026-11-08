@@ -1,6 +1,6 @@
 # 🗺️ Meu progresso
 
-**Mago da Composição** — `████████████████░░░░░░░░` **160/240 XP**
+**Mago da Composição** — `████████████████████░░░░` **200/240 XP**
 
 ![Mapa da jornada](assets/mapa_progresso.svg)
 
@@ -22,11 +22,12 @@
 | 4 · Torre do Validador (Node) | 4.2 · Compondo regras | ✅ |
 | 4 · Torre do Validador (Node) | 4.3 · O formulário completo | ✅ |
 | 4 · Torre do Validador | 🏆 LEVEL CLEAR (+10 XP) 🔁 Zero laços 🧊 Mãos limpas | ✅ |
-| 5 · Vulcão dos Sensores (Python) | 5.1 · Recursão: o básico | ❌ |
-| 5 · Vulcão dos Sensores (Python) | 5.2 · Limpar e janelas | ❌ |
-| 5 · Vulcão dos Sensores (Python) | 5.3 · Alertas e o painel final | ❌ |
+| 5 · Vulcão dos Sensores (Python) | 5.1 · Recursão: o básico | ✅ |
+| 5 · Vulcão dos Sensores (Python) | 5.2 · Limpar e janelas | ✅ |
+| 5 · Vulcão dos Sensores (Python) | 5.3 · Alertas e o painel final | ✅ |
+| 5 · Vulcão dos Sensores | 🏆 LEVEL CLEAR (+10 XP) 🔁 Zero laços 🧊 Mãos limpas | ✅ |
 | 6 · Castelo da Playlist (Node) | 6.1 · Filtrar e somar | ❌ |
 | 6 · Castelo da Playlist (Node) | 6.2 · Agrupar | ❌ |
 | 6 · Castelo da Playlist (Node) | 6.3 · Ordenar e o chefão | ❌ |
 
-_Nota estimada da atividade: 0.67 de 1,00 (a nota oficial é calculada pelo professor)._
+_Nota estimada da atividade: 0.83 de 1,00 (a nota oficial é calculada pelo professor)._
