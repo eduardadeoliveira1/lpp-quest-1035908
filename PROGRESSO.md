@@ -1,6 +1,6 @@
 # 🗺️ Meu progresso
 
-**Mago da Composição** — `████████████████████░░░░` **200/240 XP**
+**Lenda Funcional** — `████████████████████████` **240/240 XP**
 
 ![Mapa da jornada](assets/mapa_progresso.svg)
 
@@ -26,8 +26,9 @@
 | 5 · Vulcão dos Sensores (Python) | 5.2 · Limpar e janelas | ✅ |
 | 5 · Vulcão dos Sensores (Python) | 5.3 · Alertas e o painel final | ✅ |
 | 5 · Vulcão dos Sensores | 🏆 LEVEL CLEAR (+10 XP) 🔁 Zero laços 🧊 Mãos limpas | ✅ |
-| 6 · Castelo da Playlist (Node) | 6.1 · Filtrar e somar | ❌ |
-| 6 · Castelo da Playlist (Node) | 6.2 · Agrupar | ❌ |
-| 6 · Castelo da Playlist (Node) | 6.3 · Ordenar e o chefão | ❌ |
+| 6 · Castelo da Playlist (Node) | 6.1 · Filtrar e somar | ✅ |
+| 6 · Castelo da Playlist (Node) | 6.2 · Agrupar | ✅ |
+| 6 · Castelo da Playlist (Node) | 6.3 · Ordenar e o chefão | ✅ |
+| 6 · Castelo da Playlist | 🏆 LEVEL CLEAR (+10 XP) 🔁 Zero laços | ✅ |
 
-_Nota estimada da atividade: 0.83 de 1,00 (a nota oficial é calculada pelo professor)._
+_Nota estimada da atividade: 1.00 de 1,00 (a nota oficial é calculada pelo professor)._
