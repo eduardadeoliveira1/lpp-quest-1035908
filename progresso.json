@@ -1,9 +1,9 @@
 {
-  "xp": 40,
+  "xp": 80,
   "xp_total": 240,
   "titulo": "Escudeiro Funcional",
   "tudo_limpo": false,
-  "nota_1_ponto": 0.17,
+  "nota_1_ponto": 0.33,
   "niveis": [
     {
       "n": 1,
@@ -32,23 +32,26 @@
     {
       "n": 2,
       "nome": "Floresta das Tarefas",
-      "xp": 0,
-      "limpo": false,
+      "xp": 40,
+      "limpo": true,
       "missoes": [
         {
           "id": "2.1",
-          "ok": false
+          "ok": true
         },
         {
           "id": "2.2",
-          "ok": false
+          "ok": true
         },
         {
           "id": "2.3",
-          "ok": false
+          "ok": true
         }
       ],
-      "conquistas": []
+      "conquistas": [
+        "🔁 Zero laços",
+        "🧊 Mãos limpas"
+      ]
     },
     {
       "n": 3,
