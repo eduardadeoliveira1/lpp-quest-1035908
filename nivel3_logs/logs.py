@@ -14,21 +14,34 @@ def parsear_linha(linha):
 
     Dica: linha.split() separa por espaços; int(...) converte; tire o "ms" do final do tempo.
     """
-    raise NotImplementedError
+    partes = linha.split()
+
+    return {
+        "metodo": partes[0],
+        "rota": partes[1],
+        "status": int(partes[2]),
+        "ms": int(partes[3].removesuffix("ms"))
+    }
 
 
 def parsear(linhas):
     """Lista NOVA de registros (dicionários) a partir das linhas de texto.
     Ignore linhas vazias e linhas de comentário (começam com "#"). Dica: comprehension com if.
     """
-    raise NotImplementedError
+    return [
+        parsear_linha(l.strip())
+        for l in linhas
+        if l.strip() and not l.strip().startswith("#")
+    ]
 
 
 # ============================================================ MISSÃO 3.2 — Filtrar e contar
 def erros(registros):
     """Só os registros com status >= 400. (filter)"""
-    raise NotImplementedError
+    return list(filter(lambda registro: registro["status"] >= 400, registros))
 
+
+from functools import reduce
 
 def contagem_por_rota(registros):
     """Dicionário {rota: quantidade de acessos}.
@@ -36,28 +49,54 @@ def contagem_por_rota(registros):
     Dica: reduce com um dicionário NOVO a cada passo:  {**acc, rota: acc.get(rota, 0) + 1}
     (nada de acc[rota] += 1, isso altera o dicionário!)
     """
-    raise NotImplementedError
+    return reduce(
+        lambda acc, registro: {
+            **acc,
+            registro["rota"]: acc.get(registro["rota"], 0) + 1
+        },
+        registros,
+        {}
+    )
 
 
 def rotas_mais_acessadas(registros, n):
     """Lista de [rota, quantidade] das n rotas mais acessadas, da maior para a menor.
     Empate: ordem alfabética da rota. Dica: sorted(..., key=lambda par: (-par[1], par[0])).
     """
-    raise NotImplementedError
+    contagens = contagem_por_rota(registros)
+
+    ordenadas = sorted(
+        contagens.items(),
+        key=lambda item: (-item[1], item[0])
+    )
+
+    return [[rota, quantidade] for rota, quantidade in ordenadas[:n]]
 
 
 # ============================================================ MISSÃO 3.3 — O pipeline final
 def tempo_medio(registros):
     """Média do campo "ms", arredondada a 2 casas. Lista vazia: 0.0."""
-    raise NotImplementedError
+    if len(registros) == 0:
+        return 0.0
 
+    soma = sum(registro["ms"] for registro in registros)
+    return round(soma / len(registros), 2)
+
+from functools import reduce
 
 def pipe(*funcoes):
     """Compõe funções da ESQUERDA para a DIREITA: pipe(f, g)(x) == g(f(x)). pipe() não faz nada: devolve x.
 
     Dica: reduce(lambda acc, f: f(acc), funcoes, x) dentro de uma função que recebe x.
     """
-    raise NotImplementedError
+    def executar(valor):
+        return reduce(
+            lambda resultado, funcao: funcao(resultado),
+            funcoes,
+            valor
+        )
+
+    return executar
 
 
 def relatorio(linhas):
@@ -68,4 +107,17 @@ def relatorio(linhas):
 
     Use as funções das missões anteriores. Sem laços e sem variáveis que mudam!
     """
-    raise NotImplementedError
+    registros = parsear(linhas)
+    lista_erros = erros(registros)
+
+    return {
+        "total": len(registros),
+        "erros": len(lista_erros),
+        "taxa_erro": round(
+            len(lista_erros) / len(registros), 2
+        ) if registros else 0.0,
+        "tempo_medio": tempo_medio(registros),
+        "top_rotas": rotas_mais_acessadas(registros, 3)
+    }
+
+

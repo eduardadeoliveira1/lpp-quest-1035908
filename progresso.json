@@ -1,9 +1,9 @@
 {
-  "xp": 80,
+  "xp": 120,
   "xp_total": 240,
-  "titulo": "Escudeiro Funcional",
+  "titulo": "Cavaleiro da Pureza",
   "tudo_limpo": false,
-  "nota_1_ponto": 0.33,
+  "nota_1_ponto": 0.5,
   "niveis": [
     {
       "n": 1,
@@ -56,23 +56,26 @@
     {
       "n": 3,
       "nome": "Cânions dos Logs",
-      "xp": 0,
-      "limpo": false,
+      "xp": 40,
+      "limpo": true,
       "missoes": [
         {
           "id": "3.1",
-          "ok": false
+          "ok": true
         },
         {
           "id": "3.2",
-          "ok": false
+          "ok": true
         },
         {
           "id": "3.3",
-          "ok": false
+          "ok": true
         }
       ],
-      "conquistas": []
+      "conquistas": [
+        "🔁 Zero laços",
+        "🧊 Mãos limpas"
+      ]
     },
     {
       "n": 4,

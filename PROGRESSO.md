@@ -1,6 +1,6 @@
 # 🗺️ Meu progresso
 
-**Escudeiro Funcional** — `████████░░░░░░░░░░░░░░░░` **80/240 XP**
+**Cavaleiro da Pureza** — `████████████░░░░░░░░░░░░` **120/240 XP**
 
 ![Mapa da jornada](assets/mapa_progresso.svg)
 
@@ -14,9 +14,10 @@
 | 2 · Floresta das Tarefas (Node) | 2.2 · Remover, filtrar e resumir | ✅ |
 | 2 · Floresta das Tarefas (Node) | 2.3 · Desfazer e refazer | ✅ |
 | 2 · Floresta das Tarefas | 🏆 LEVEL CLEAR (+10 XP) 🔁 Zero laços 🧊 Mãos limpas | ✅ |
-| 3 · Cânions dos Logs (Python) | 3.1 · Ler o log | ❌ |
-| 3 · Cânions dos Logs (Python) | 3.2 · Filtrar e contar | ❌ |
-| 3 · Cânions dos Logs (Python) | 3.3 · O pipeline final | ❌ |
+| 3 · Cânions dos Logs (Python) | 3.1 · Ler o log | ✅ |
+| 3 · Cânions dos Logs (Python) | 3.2 · Filtrar e contar | ✅ |
+| 3 · Cânions dos Logs (Python) | 3.3 · O pipeline final | ✅ |
+| 3 · Cânions dos Logs | 🏆 LEVEL CLEAR (+10 XP) 🔁 Zero laços 🧊 Mãos limpas | ✅ |
 | 4 · Torre do Validador (Node) | 4.1 · Fábricas de regras (closures) | ❌ |
 | 4 · Torre do Validador (Node) | 4.2 · Compondo regras | ❌ |
 | 4 · Torre do Validador (Node) | 4.3 · O formulário completo | ❌ |
@@ -27,4 +28,4 @@
 | 6 · Castelo da Playlist (Node) | 6.2 · Agrupar | ❌ |
 | 6 · Castelo da Playlist (Node) | 6.3 · Ordenar e o chefão | ❌ |
 
-_Nota estimada da atividade: 0.33 de 1,00 (a nota oficial é calculada pelo professor)._
+_Nota estimada da atividade: 0.50 de 1,00 (a nota oficial é calculada pelo professor)._
