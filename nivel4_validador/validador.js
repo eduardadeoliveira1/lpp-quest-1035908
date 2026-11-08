@@ -13,29 +13,61 @@
 /** obrigatorio("Nome") devolve um validador: valor vazio, só com espaços, null ou undefined
  *  => "Nome é obrigatório"; caso contrário null. */
 export function obrigatorio(campo) {
-  throw new Error("Missão 4.1 ainda não implementada: obrigatorio");
+    return (valor) => {
+        if (valor === null || valor === undefined || String(valor).trim() === "") {
+            return `${campo} é obrigatório`;
+        }
+
+        return null;
+    };
 }
 
 /** minimo("Senha", 8) devolve um validador: menos de 8 caracteres => "Senha deve ter pelo menos 8 caracteres". */
 export function minimo(campo, n) {
-  throw new Error("Missão 4.1 ainda não implementada: minimo");
+    return (valor) => {
+        const texto = String(valor ?? "");
+
+        if (texto.length < n) {
+            return `${campo} deve ter pelo menos ${n} caracteres`;
+        }
+
+        return null;
+    };
 }
 
 /** padrao("E-mail", /@/, "conter @") devolve um validador: se o texto não casa com a regex => "E-mail deve conter @".
  *  Dica: regex.test(String(valor ?? "")) */
 export function padrao(campo, regex, descricao) {
-  throw new Error("Missão 4.1 ainda não implementada: padrao");
+    return (valor) => {
+        if (!regex.test(String(valor ?? ""))) {
+            return `${campo} deve ${descricao}`;
+        }
+
+        return null;
+    };
 }
 
 // ============================================================ MISSÃO 4.2 — Compondo regras
 /** todas(v1, v2, ...) devolve um validador que roda os validadores em ordem e devolve o PRIMEIRO erro (ou null). */
 export function todas(...validadores) {
-  throw new Error("Missão 4.2 ainda não implementada: todas");
+    return (valor) => {
+        const resultados = validadores.map(
+            (validador) => validador(valor)
+        );
+
+        return resultados.find((resultado) => resultado !== null) ?? null;
+    };
 }
 
 /** acumular(v1, v2, ...) devolve um validador que devolve a LISTA de todos os erros ([] se estiver tudo certo). */
 export function acumular(...validadores) {
-  throw new Error("Missão 4.2 ainda não implementada: acumular");
+    return (valor) => {
+        const resultados = validadores.map(
+            (validador) => validador(valor)
+        );
+
+        return resultados.filter((resultado) => resultado !== null);
+    };
 }
 
 // ============================================================ MISSÃO 4.3 — O formulário completo
@@ -43,5 +75,19 @@ export function acumular(...validadores) {
  *  Devolve { valido: boolean, erros: { campo: "primeira mensagem" } } só com os campos que falharam.
  *  Dica: Object.entries, map, filter, Object.fromEntries. Não altere regras nem dados! */
 export function validarFormulario(regras, dados) {
-  throw new Error("Missão 4.3 ainda não implementada: validarFormulario");
+    const resultados = Object.entries(regras).map(
+        ([campo, validador]) => [
+            campo,
+            validador(dados[campo])
+        ]
+    );
+
+    const erros = Object.fromEntries(
+        resultados.filter(([campo, erro]) => erro !== null)
+    );
+
+    return {
+        valido: Object.keys(erros).length === 0,
+        erros: erros
+    };
 }
