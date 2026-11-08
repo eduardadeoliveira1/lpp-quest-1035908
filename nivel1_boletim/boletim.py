@@ -40,14 +40,16 @@ def boletim(alunos):
     Dica: uma list comprehension (ou map) usando as funções da missão 1.1.
     A lista original não pode ser alterada!
     """
-    return [
-        {
+    def criar_boletim(aluno):
+        nota_media = media(aluno["notas"])
+
+        return {
             "nome": aluno["nome"],
-            "media": media(aluno["notas"]),
-            "situacao": situacao(media(aluno["notas"]))
+            "media": nota_media,
+            "situacao": situacao(nota_media)
         }
-        for aluno in alunos
-    ]
+
+    return list(map(criar_boletim, alunos))
 
 
 # ============================================================ MISSÃO 1.3 — filter e reduce: aprovados e ranking
